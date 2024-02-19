@@ -49,7 +49,6 @@ class _MyAppState extends State<MyApp> {
   getToken() async{
     String? token = await MyNotification.messaging.getToken();
     print("token ${token}");
-
   }
   // This widget is the root of your application.
   @override
