@@ -98,11 +98,6 @@ class PhoneHome extends StatefulWidget {
 class _PhoneHomeState extends State<PhoneHome> {
   TextEditingController phonenumbercontroller = TextEditingController();
 
-
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -123,7 +118,6 @@ class _PhoneHomeState extends State<PhoneHome> {
                   )
               ),
             ),
-
           ),
           SizedBox(height: 30,),
           ElevatedButton(
@@ -136,19 +130,11 @@ class _PhoneHomeState extends State<PhoneHome> {
                 },
                 codeAutoRetrievalTimeout: (String verificationId){},
                 phoneNumber: phonenumbercontroller.text.toString(),
-              );
-
-            },
+                );
+              },
             child: Text("Recieve OTP"),),
-
-
-
-
         ],
       ),
-
     );
   }
-
-
 }
