@@ -75,8 +75,8 @@ class MyNotification{
                 android: AndroidNotificationDetails(
                     "channel_id",
                     "channel_name"
-                )
-            )
+                ),
+            ),
         );
       }
     });

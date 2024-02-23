@@ -114,7 +114,6 @@ class _MyAppState extends State<MyApp> {
   getToken() async{
     String? token = await MyNotification.messaging.getToken();
     print("token ${token}");
-
   }
 
 
