@@ -74,6 +74,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebaseproject/Authentication/Login.dart';
 import 'package:firebaseproject/Authentication/loginwithgoogle/loginwithgoogle.dart';
 import 'package:firebaseproject/Notifications/Notification_Servies.dart';
+import 'package:firebaseproject/UI.dart';
 import 'package:firebaseproject/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -127,7 +128,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  PhoneHome(),
+      home:  GlassMorphism(),
     );
   }
 }

@@ -75,85 +75,6 @@
 //   }
 // }
 
-// import 'package:firebase_auth/firebase_auth.dart';
-// import 'package:firebasetutorial/authentication/Wrapper.dart';
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import 'package:pinput/pinput.dart';
-//
-// class OtpPage extends StatefulWidget {
-//   final String vid;
-//   const OtpPage({super.key,required this.vid});
-//
-//   @override
-//   State<OtpPage> createState() => _OtpPageState();
-// }
-//
-// class _OtpPageState extends State<OtpPage> {
-//   // var code="";
-//   //
-//   // signIn()async{
-//   //
-//   //   PhoneAuthCredential credential = PhoneAuthProvider.credential(
-//   //       verificationId: widget.vid,
-//   //       smsCode: code,);
-//   //   try{
-//   //     await FirebaseAuth.instance.signInWithCredential(credential).then((value) {
-//   //       Get.offAll(Wrapper());
-//   //     });
-//   //   }on FirebaseAuthException catch(e){
-//   //     Get.snackbar('Error Occured', e.code);
-//   //   }catch(e){
-//   //     Get.snackbar('Error Occured', e.toString());
-//   //   }
-//   // }
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       resizeToAvoidBottomInset: true,
-//       body: SingleChildScrollView(
-//         child: ListView(
-//           shrinkWrap: true,
-//           children: [
-//             Center(
-//               child: Text("OTP verification",style: TextStyle(fontSize: 30),),
-//             ),
-//             Padding(padding: EdgeInsets.symmetric(horizontal: 25,vertical: 6),
-//               child: Text("Enter OTP sent to +91 9876543210",textAlign: TextAlign.center,),
-//             ),
-//             SizedBox(height: 20,),
-//             textcode(),
-//             SizedBox(height: 40,),
-//             ElevatedButton(
-//                 onPressed: () {
-//                   // signIn();
-//                 },
-//                 child: Text("Verifiy & Proceed"),),
-//
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-//   Widget textcode(){
-//     return Center(
-//       child: Padding(
-//         padding: EdgeInsets.all(6.0),
-//         child: Pinput(
-//           length: 6,
-//           onChanged: (value){
-//             setState(() {
-//               code=value;
-//             });
-//           },
-//
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebaseproject/Authentication/Home.dart';
@@ -169,6 +90,7 @@ class OTPScreen extends StatefulWidget {
 
 class _OTPScreenState extends State<OTPScreen> {
   TextEditingController otpController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -206,12 +128,9 @@ class _OTPScreenState extends State<OTPScreen> {
 
             }catch(ex){
 
-
             }
 
-
-          }, child: Text("OTP"))
-
+          }, child: Text("OTP")),
         ],
       ),
     );
