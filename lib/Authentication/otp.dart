@@ -75,7 +75,6 @@
 //   }
 // }
 
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebaseproject/Authentication/Home.dart';
 import 'package:flutter/material.dart';
@@ -125,12 +124,11 @@ class _OTPScreenState extends State<OTPScreen> {
               FirebaseAuth.instance.signInWithCredential(credential).then((value) {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),));
               });
-
             }catch(ex){
 
             }
 
-          }, child: Text("OTP")),
+            }, child: Text("OTP")),
         ],
       ),
     );
